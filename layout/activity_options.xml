@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.capstone.challengeweek.Options"
+    android:background="@drawable/alt_background_two">
+
+<!--    <VideoView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/videoView"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_gravity="center"/>-->
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="360sp"
+        android:layout_height="300sp"
+        android:layout_marginBottom="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/options"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/default_game"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105sp"
+            android:background="@drawable/custom_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/kenvector_future_thin"
+            android:onClick="gameOption"
+            android:text="@string/default_game"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/food_fest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:background="@drawable/custom_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/kenvector_future_thin"
+            android:onClick="gameOption"
+            android:text="@string/food_game"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/default_game" />
+
+        <Button
+            android:id="@+id/checkers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24sp"
+            android:background="@drawable/custom_btn"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/kenvector_future_thin"
+            android:onClick="gameOption"
+            android:text="@string/inverted_default"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/food_fest"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.tomer.fadingtextview.FadingTextView
+        android:id="@+id/options"
+        android:layout_width="389dp"
+        android:layout_height="183dp"
+        android:fontFamily="@font/kenvector_future_thin"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436"
+        app:texts="@array/option"
+        app:timeout="15000" />
+</androidx.constraintlayout.widget.ConstraintLayout>
