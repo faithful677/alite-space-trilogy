@@ -1,4 +1,4 @@
-# alite-space-trilogy
+# Description
 Mobile Game development is an exemplary platform that connects content with consumers. According to a report by StatCounter, the pandemic witnessed a significant increase in mobile game downloads in Western Europe in the first quarter of 2020. Countries like France, Germany, Italy, and Spain witnessed a substantial increase in mobile game downloads with 97, 89, 75, and 66 million downloads, respectively. Thus, mobile game development is a worthwhile enterprise, especially in this current global climate.
 
 The ability to adapt aspects of a game according to preference plays a significant role in the popularity and enjoyment of traditional board games according to an experiment conducted by Malatras and et al entitled “Exploiting traditional gameplay characteristics to enhance digital board games".
